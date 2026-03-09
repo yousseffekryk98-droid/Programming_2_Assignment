@@ -19,7 +19,7 @@ int main() {
     else 
         largest = num3;
     
-    
+     cout << "the largest is :" ;
     cout << largest << endl;
     
     return 0;
