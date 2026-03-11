@@ -18,3 +18,26 @@ int main() {
             numbers[count++] = num;
         }
     }
+
+    int uniqueCount = 0;
+    for (int i = 0; i < count; i++) {
+        bool found = false;
+        for (int j = 0; j < uniqueCount; j++) {
+            if (numbers[i] == uniqueNumbers[j]) {
+                found = true;
+                break;
+            }
+        }
+        if (!found) {
+            uniqueNumbers[uniqueCount++] = numbers[i];
+        }
+    }
+
+    cout << "Unique numbers: ";
+    for (int i = 0; i < uniqueCount; i++) {
+        cout << uniqueNumbers[i] << " ";
+    }
+    cout << endl;
+
+    return 0;
+}

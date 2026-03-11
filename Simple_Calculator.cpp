@@ -8,13 +8,11 @@ cout << "The sum of " << num1 << " and " << num2 << " is: " << num1 + num2 << en
 cout << "The product of " << num1 << " and " << num2 << " is: " << num1 * num2 << endl;
 cout << "The difference of " << num1 << " and " << num2 << " is: " << num1 - num2 << endl;
 
-   if(num2 != 0){
-    cout << " perform division " << num1 << " and " << num2 << " is: " << num1 / num2;
-    } else 
-    {
-        cout << " no Division ";
-
-}
-    COUT<<"TRY AGAIN ";
+    if(num2 != 0){
+        cout << " perform division " << num1 << " and " << num2 << " is: " << num1 / num2 << endl;
+    } else {
+        cout << " no Division " << endl;
+    }
+    
     return 0;
 }

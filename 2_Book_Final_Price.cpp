@@ -23,10 +23,10 @@ int main() {
     
     cin.ignore();
     cout << "Enter book title: ";
-    getline(cin, book.title);
+    cin.getline(book.title, 100);
     
     cout << "Enter book author: ";
-    getline(cin, book.author);
+    cin.getline(book.author, 100);
     
     cout << "Enter book price: ";
     cin >> book.price;
@@ -42,7 +42,7 @@ int main() {
     cout << "Author: " << book.author << endl;
     cout << "Price: " << book.price << endl;
     cout << "Discount: " << book.discountPercent << "%" << endl;
-    cout << "Final Price: $" << book.finalPrice << endl;
+    cout << "Final Price: " << book.finalPrice << endl;
     
     return 0;
 }

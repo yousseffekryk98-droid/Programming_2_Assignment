@@ -10,7 +10,8 @@ int main() {
     CityWeather weather;
     
     cout << "Enter city name: ";
-    getline(cin, weather.cityName);
+    cin.ignore();
+    cin.getline(weather.cityName, 50);
     
     cout << "Enter temperatures for 7 days:" << endl;
     for (int i = 0; i < 7; i++) {
@@ -25,7 +26,7 @@ int main() {
         }
     }
     
-    cout << "\n--- Weekly Weather Report ---" << endl;
+    cout << " Weekly Weather Report " << endl;
     cout << "City: " << weather.cityName << endl;
     cout << "Highest Temperature: " << highest << " degrees" << endl;
     

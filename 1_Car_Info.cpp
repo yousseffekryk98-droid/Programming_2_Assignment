@@ -23,11 +23,11 @@ int main() {
     cout << "Enter car price: ";
     cin >> car.price;
     
-    cout << "\n--- Car Information ---" << endl;
+    cout << " Car Information " << endl;
     cout << "Brand: " << car.brand << endl;
     cout << "Model: " << car.model << endl;
     cout << "Year: " << car.year << endl;
-    cout << "Price: $" << car.price << endl;
+    cout << "Price: " << car.price << endl;
     
     return 0;
 }
